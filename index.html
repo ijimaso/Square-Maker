@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="./index.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
+
+
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+        integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+        crossorigin=""></script>
+
+    <title>実験範囲指定ツール</title>
+</head>
+
+<body>
+    <div id="mapid"></div>
+    <div class="parameters">
+        <p>中心座標:</p>
+        <input type="text" id="centerCoordinate" size="40">
+    </div>
+    <div class="parameters">
+        <p>1辺の距離(m):</p>
+        <input type="text" id="lengthRect" value="1000">
+    </div>
+    <button id="button">矩形設定</button>
+    <p id="lowLeftCoordinate"></p>
+    <p id="upRightCoordinate"></p>
+
+    <script src="./leaflet.js"></script>
+</body>
+
+</html>

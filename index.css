@@ -1,0 +1,20 @@
+#mapid{
+    width: 600px;
+    height: 400px;
+}
+
+.parameters p{
+    display: inline;
+}
+
+#button{
+    display: inline;
+}
+
+#lowLeftCoordinate{
+    font-size: 15px;
+}
+
+#upRightCoordinate{
+    font-size: 15px;
+}
