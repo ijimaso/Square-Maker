@@ -1,2 +1,2 @@
 # Square Maker
-地図上の指定した緯度経度から任意の一辺の長さの正方形を作成し，可視化できるアプリです．
+This app is to draw any size bbox and get coordinates.
